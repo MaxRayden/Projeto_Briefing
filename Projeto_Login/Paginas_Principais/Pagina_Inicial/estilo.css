@@ -31,6 +31,7 @@ body{
     text-decoration: none;
     font-size: 23px;
     padding: 20px 80px;
+    color: black;
 }
 .menu a:hover{/*Quando o mouse passa por cima*/
     color:red;
@@ -46,4 +47,85 @@ body{
 #botao:hover{/*Quando o mouse passa por cima*/
     border: none;
     background: red;
+}
+.header{
+    background: white;
+    height: 1048px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.headeline{
+    flex: 63%;
+    margin-left: 5%;
+    margin-top: 1%;
+    /*border: 5px solid black;*/
+    border-radius: 2%;
+    text-align: center;
+}
+.headelinet{
+    border: 2px solid black;
+    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 30px;
+}
+.textoa{
+    border: 2px solid black;
+    margin-top: 5%;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.botaoec{
+    font-size: 30px;
+    margin-top: 10%;
+    /*border: 3px solid black;*/
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 30%;
+}
+.botaoec a{
+    text-decoration: none;
+}
+#botaoe{
+    background: cyan;
+    border-radius: 10px;
+    padding: 12px 50px;
+    color: black;
+    margin-left: 60px;
+}
+#botaoe:hover{/*Quando o mouse passa por cima*/
+    border: none;
+    background: red;
+}
+#botaoc{
+    background: cyan;
+    border-radius: 10px;
+    padding: 12px 50px;
+    color: black;
+    margin-left: 60px;
+}
+#botaoc:hover{/*Quando o mouse passa por cima*/
+    border: none;
+    background: red;
+}
+.tela{
+    flex: 26%;
+    background: cyan;
+    border-radius: 2%;
+    margin-top: 1%;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+.textotela{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+}
+.texto{
+    text-align: justify;
+    font-size: 18px;
+    margin-right: 2%;
+    margin-left: 2%;
 }
