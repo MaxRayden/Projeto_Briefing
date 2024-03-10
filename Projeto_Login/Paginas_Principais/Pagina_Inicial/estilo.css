@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 body{
     margin: 0%;
+    font-family: "Bebas Neue", sans-serif;
 }
 .navbar{
-    height: 100px;
-    background: gray;
+    height: 160px;
+    background: cyan;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    flex: 10%;
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-left: 0%;
+}
+.menu{
+    flex: 70%;
+    /*border: 1px solid black;*/
+    text-align: right;
+    padding: 20px;
+    margin-right: 3%;
+}
+.menu a{/*Links*/
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 80px;
+}
+.menu a:hover{/*Quando o mouse passa por cima*/
+    color:red;
+    border-top: 3px solid red;
+}
+#botao{
+    background: white;
+    border-radius: 5px;
+    padding: 12px 50px;
+    color: black;
+    margin-left: 60px;
+}
+#botao:hover{/*Quando o mouse passa por cima*/
+    border: none;
+    background: red;
 }
