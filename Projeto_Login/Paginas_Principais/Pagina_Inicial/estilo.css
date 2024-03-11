@@ -8,7 +8,7 @@ body{
 }
 .navbar{
     height: 160px;
-    background: cyan;
+    background: #93f0e9;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -49,7 +49,7 @@ body{
     background: red;
 }
 .header{
-    background: white;
+    background: #545c6b;
     height: 1048px;
     display: flex;
     flex-flow: row wrap;
@@ -66,8 +66,8 @@ body{
 .headelinet{
     border: 2px solid black;
     margin-top: 10%;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 20%;
+    margin-left: 20%;
     font-size: 30px;
 }
 .textoa{
@@ -89,7 +89,7 @@ body{
     text-decoration: none;
 }
 #botaoe{
-    background: cyan;
+    background: #93f0e9;
     border-radius: 10px;
     padding: 12px 50px;
     color: black;
@@ -100,7 +100,7 @@ body{
     background: red;
 }
 #botaoc{
-    background: cyan;
+    background: #93f0e9;
     border-radius: 10px;
     padding: 12px 50px;
     color: black;
@@ -112,11 +112,12 @@ body{
 }
 .tela{
     flex: 26%;
-    background: cyan;
+    background: #93f0e9;
     border-radius: 2%;
     margin-top: 1%;
     margin-right: 4%;
     margin-left: 0%;
+    margin-bottom: 1%;
 }
 .textotela{
     margin-top: 5%;
