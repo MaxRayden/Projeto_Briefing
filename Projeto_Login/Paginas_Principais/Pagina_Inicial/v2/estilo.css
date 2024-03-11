@@ -8,7 +8,7 @@ body{
 }
 .navbar{
     height: 160px;
-    background: #93f0e9;
+    background: #219ebc;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -34,8 +34,9 @@ body{
     color: black;
 }
 .menu a:hover{/*Quando o mouse passa por cima*/
-    color:red;
-    border-top: 3px solid red;
+    color:#ffb703;
+    border-top: 3px solid #ffb703;
+    border-bottom: 3px solid #ffb703;
 }
 #botao{
     background: white;
@@ -46,14 +47,17 @@ body{
 }
 #botao:hover{/*Quando o mouse passa por cima*/
     border: none;
-    background: red;
+    background: #ffb703;
 }
 .header{
     background: white;
     height: 1048px;
     display: flex;
     flex-flow: row wrap;
-
+    /* background: url(../../../Imagens/background-wallpaper-8k-landscape.png); */
+    background: #8ecae6;
+    background-size: cover;
+    background-position: center;
 }
 .headeline{
     flex: 63%;
@@ -73,15 +77,16 @@ body{
     font-size: 30px;
 }
 .textoa{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 5%;
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
 }
 .botaoec{
     font-size: 30px;
-    margin-top: 10%;
+    margin-top: 6%;
     /*border: 3px solid black;*/
     text-align: center;
     margin-left: 25%;
@@ -91,7 +96,7 @@ body{
     text-decoration: none;
 }
 #botaoe{
-    background: #93f0e9;
+    background: white;
     border-radius: 10px;
     padding: 12px 50px;
     color: black;
@@ -99,10 +104,10 @@ body{
 }
 #botaoe:hover{/*Quando o mouse passa por cima*/
     border: none;
-    background: red;
+    background: #ffb703;
 }
 #botaoc{
-    background: #93f0e9;
+    background: white;
     border-radius: 10px;
     padding: 12px 50px;
     color: black;
@@ -110,5 +115,5 @@ body{
 }
 #botaoc:hover{/*Quando o mouse passa por cima*/
     border: none;
-    background: red;
+    background: #ffb703;
 }
