@@ -7,12 +7,12 @@
 }
 body{
     margin: 0%;
-    /* background: url(../Assets/Imagens/foto-de-tirar-o-folego-de-belas-pedras-sob-a-agua-turquesa-de-um-lago-e-colinas-ao-fundo.jpg);
-    background-position: center;
+    background: #EBEBD3;
+    /* background-position: center;
     background-size: cover; */
 }
 .navbar{
-    background: #219ebc;
+    background: #557174;
     height: 180px;
     display: flex;
     flex-flow: row wrap;
@@ -23,15 +23,15 @@ body{
 .logo{
     /* border: 1px solid black; */
     flex: 12%;
-    margin-left: 8%;
+    margin-left: 4%;
     text-align: center;
 }
 .menu{
     /* border: 1px solid black; */
     flex: 72%;
-    margin-right: 8%;
+    margin-right: 4%;
     text-align: right;
-    padding: 30px;
+    padding: 25px;
     font-size: 20px;
 }
 .menu a{
@@ -76,24 +76,21 @@ body{
     text-align: justify;
 }
 .botaor{
-    background: #8ecae6;
+    background: #9DAD7F;
     border: none;
     font-size: 25px;
     border-radius: 5%;
-    border: 3px solid #8ecae6;
+    border: 3px solid #9DAD7F;
 }
 .botaor a{
     text-decoration: none;
     color: black;
 }
-.botaor:hover{
-    background: yellow;
-    border: 3px solid yellow;
-}
 .botaor1{
     font-size: 25px;
     border-radius: 5%;
-    border: 3px solid #8ecae6;
+    border: 3px solid #9DAD7F;
+    background: #9DAD7F;
 }
 .botaor1 a{
     text-decoration: none;
@@ -104,7 +101,7 @@ body{
     border: 3px solid black;
     text-align: center;
     border-radius: 5%;
-    background: #8ecae6;
+    background: #557174;
     margin-top: 6%;
     margin-bottom: 6%;
 }
@@ -112,6 +109,7 @@ body{
     margin-top: 0%;
     /* border: 1px solid black; */
     font-size: 20px;
+    margin-bottom: 10%;
 }
 .caixa{
     /* border: 1px solid black; */
@@ -121,6 +119,7 @@ body{
     width: 450px;
     height: 50px;
     border: 2px solid black;
+    background: #9DAD7F;
     margin-top: 25px;
 }
 .caixa input:focus{
@@ -132,7 +131,7 @@ body{
 .botao{
     padding: 10px 0px;
     margin-top: 5%;
-    background: white;
+    background: #9DAD7F;
     border: none;
     border-radius: 3%;
 }
@@ -141,9 +140,6 @@ body{
     text-decoration: none;
     color: black;
     padding: 10px 95px;
-}
-.botao a:hover{
-    background: grey;
 }
 .imagens{
     display: flex;
