@@ -1,7 +1,0 @@
-git add .
-git commit -m("Mensagem")
-git push
-
-git clone "URL"
-
-git pull
