@@ -1,0 +1,22 @@
+/* body {
+    background: url(./colors/COR\ DE\ FUNDO\ ATUALIZADA.png) no-repeat;
+    margin: auto;
+    padding: 0%;
+    image-resolution: style="max-width: 100%";
+} */
+.container{
+    border: 1px solid black;
+    
+    
+        input {
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 16px;
+            background-color: rgb(20, 152, 172);
+            display: flex;
+        }
+        
+        label {
+            font-weight: arial;
+        }
+}
