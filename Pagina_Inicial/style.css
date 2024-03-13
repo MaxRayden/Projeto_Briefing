@@ -33,15 +33,17 @@ body{
     text-align: right;
     padding: 25px;
     font-size: 20px;
-}
-.menu a{
-    text-decoration: none;
-    color: black;
-    padding: 20px 65px;
-}
-.menu a:hover{
-    border-top: 3px solid #557174;
-    border-bottom: 3px solid #557174;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 65px;
+
+        :hover {
+            border-top: 3px solid #557174;
+            border-bottom: 3px solid #557174;
+        }
+    }
 }
 #contato{
     background: #557174;
