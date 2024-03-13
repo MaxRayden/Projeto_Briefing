@@ -8,8 +8,9 @@
 body{
     margin: 0%;
     background: #F7F7E8;
-    /* background-position: center;
-    background-size: cover; */
+    background: url(../Assets/Imagens/background);
+    background-position: center;
+    background-size: cover;
 }
 .navbar{
     background: #F7F7E8;
@@ -18,16 +19,16 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 5px solid black; */
+    border-bottom: 5px solid black;
 }
 .logo{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     flex: 12%;
     margin-left: 4%;
     text-align: center;
 }
 .menu{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     flex: 72%;
     margin-right: 4%;
     text-align: right;
