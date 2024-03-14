@@ -11,19 +11,19 @@ body{
     background: url(../Assets/Imagens/background.jpg);
 }
 .container_header_navbar{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 10px;
 }
 .header{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     margin-left: 5%;
 }
 .navbar{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-flow: row wrap;
     margin-right: 5%;
@@ -36,26 +36,25 @@ body{
         font-size: 30px;
         text-decoration: none;
         color: black;
-        padding: 5px 15px 5px 15px
-    }
+        padding: 5px 15px 5px 15px;
+    }v2
     :hover{
         border-top: 3px solid green;
         border-bottom: 3px solid green;
     }
 }
 .container_texto_login{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-flow: row wrap;
     margin-top: 10px;
     justify-content: space-between;
-    height: 1000px;
 }
 .texto{
     border: 2px solid black;
     flex-flow: row wrap;
-    padding: 50px;
-    margin: 5%
+    padding: 20px;
+    margin: 5% 5% 30% 5% 
 }
 .registra{
     /* border: 2px solid black; */
@@ -75,9 +74,10 @@ body{
 }
 .login{
     border: 4px solid black;
+    background: #557174;
     flex-flow: row wrap;
-    margin: 10% 5% 10% 5%;
-    padding: 20px 20px 0 20px;
+    margin: 5% 5% 30% 5%;
+    padding: 30px 20px 0 20px;
     border-radius: 5%;
 }
 .email_senha input{
@@ -87,8 +87,10 @@ body{
 }
 .botao_entrar{
     border: 2px solid black;
+    background: white;
     display: flex;
     margin-top: 5%;
+    margin-bottom: 10%;
     padding: 10px 104px 10px 104px;
     justify-content: center;
     align-items: center;
@@ -96,7 +98,8 @@ body{
         text-decoration: none;
         color: black;
     }
-    :hover{
-        background: green;
+
+}    
+.botao_entrar:hover{
+    background: green;
     }
-}
