@@ -1,22 +1,58 @@
-/* body {
-    background: url(./colors/COR\ DE\ FUNDO\ ATUALIZADA.png) no-repeat;
-    margin: auto;
-    padding: 0%;
+body {
+    background: #F7F7E8;
     image-resolution: style="max-width: 100%";
-} */
+} 
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
 .container{
-    border: 1px solid black;
+    /*cima, direita, baixo, esquerda*/
+    margin: 0% 15% 0% 15%;
+    background-color: #557174;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); 
+
+}
+
+#dados {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 10%;
     
+    input {
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        transition: background 0.2s;
+        padding: 5% 30% 5% 30%;
+        }
+    input:focus{
+        background: #ebebd3;
+        border: none;
+    }
+
+    label {
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    select {
+        border-radius: 8px;
+        font-size: 16px;
+        display: flex;
+        padding: 5% 30% 5% 30%;
+        flex-direction: column;
+        text-align: center;
+    }
     
-        input {
-            border: 1px solid black;
-            padding: 5px;
-            font-size: 16px;
-            background-color: rgb(20, 152, 172);
-            display: flex;
-        }
-        
-        label {
-            font-weight: arial;
-        }
 }

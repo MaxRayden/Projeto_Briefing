@@ -4,16 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro</title>
+    <title>Cadastro de Cliente</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../Assets/Imagens/MINIATURA.png" alt="MINIATURA">
+        </div>
+    </nav>
     <div class="container">
-        <label for="nome">Nome:</label> <input type="text" id="nome">
-        <br><br>
-        <label for="sobrenome">Sobrenome:</label> <input type="text" id="sobrenome">
-        <br><br>
-        <label for="idade">Idade:</label> <input type="text" id="idade">
-
+        <div id="dados">
+            <label for="nome">Nome</label> 
+            <input type="text" id="nome">
+            <br><br>
+            <label for="sobrenome">Sobrenome</label> 
+            <input type="text" id="sobrenome">
+            <br><br>
+            <label for="idade">Idade</label> 
+            <input type="text" id="number">
+            <br><br>
+            <label for="Nacionalidade">Nacionalidade</label> 
+            <select id="nacionalidade" name="nacionalidade">
+                <option value="texto">Selecione...</option>
+                <option value="brasileiro">Brasileiro</option>
+                <option value="americano">Americano</option>
+                <option value="portugues">Português</option>
+                <option value="argentino">Argentino</option>
+                </select>
+            <br><br>
+            <div class="enviar">
+                <input type="submit" id="enviar dados">
+            </div>
+            
+            </vr>
+        </div>
     </div>
 </body>
 </html>
