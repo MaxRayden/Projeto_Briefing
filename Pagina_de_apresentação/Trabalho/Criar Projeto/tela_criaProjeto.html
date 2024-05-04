@@ -11,31 +11,33 @@
     <div class="header">
     <h2 id="titulo">CRIAÇÃO DE PROJETOS</h2>
     </div>
+
     <div class="cadastro">
-    <form id="formProjeto">
-        <label>Selecione uma Categoria de Projeto</label>
-        <select id="opcoes">
-            <option value=""></option>
-            <option value="web">Web Desing</option>
-            <option value="motion">Motion Desing</option>
-            <option value="filmaker">Filmaker</option>
-            <option value="vetorizacao">Vetorização</option>
-            <option value="logotipo">Logotipo</option>
-        </select>
-        <div id = caixaResumo>
-            <label>Escreva um breve resumo sobre seu Projeto</label>
-            <textarea id="resumoProjeto"></textarea>
-        </div>
-        <div>
-            <label>Prazo de entrega (DIAS)</label>
-            <input id="prazoProjeto">
-        </div>
-        <div>
-            <label>E-mail para Contato</label>
-            <input id="contato">
-        </div>
-        <button type="button" id="enviarProjeto">ENVIAR</button>
-    </form>
+        <form id="formProjeto">
+            <div> <label>Selecione uma Categoria de Projeto</label>
+            <select id="opcoes">
+                <option value=""></option>
+                <option value="web">Web Desing</option>
+                <option value="motion">Motion Desing</option>
+                <option value="filmaker">Filmaker</option>
+                <option value="vetorizacao">Vetorização</option>
+                <option value="logotipo">Logotipo</option>
+            </select>
+            <div>
+                <label>Prazo de entrega (DIAS)</label>
+                <input id="prazoProjeto">
+            </div>
+            <div>
+                <label>E-mail para Contato</label>
+                <input id="contato"> </div>
+            </div>
+            <div id = caixaResumo>
+                <label>Escreva um breve resumo sobre seu Projeto</label>
+                <textarea id="resumoProjeto"></textarea>
+            </div>
+
+            <button type="button" id="enviarProjeto">ENVIAR</button>
+        </form>
     </div>
     <script src="criarProjeto.js"></script>
     <script src="exibir_dados_local_storage.js"></script>
