@@ -29,7 +29,7 @@ enviarBotao.addEventListener('click', function (){
         };
         const dadosJSON = JSON.stringify(dados);
         const  idTimesTamp = Date.now();
-        const nomeArquivo = 'dados_projeto_' + idTimesTamp + '.json';
+        const nomeArquivo = 'projeto_'+ cat + idTimesTamp + '.json';
         localStorage.setItem(nomeArquivo, dadosJSON);
 
         alert("Projeto salvo no Local Storage com sucesso!");
