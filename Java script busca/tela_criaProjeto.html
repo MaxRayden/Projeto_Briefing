@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="criaProjeto.css">
+    <title>Criar Projeto</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Criação de Projetos</h2>
+    </div>
+    <div class="cadastro">
+        <form id="formProjeto">
+            <label>Selecione uma Categoria de Projeto</label>
+            <select id="opcoes">
+                <option value=""></option>
+                <option value="web">Web</option>
+                <option value="motion">Motion</option>
+                <option value="filmaker">Filmaker</option>
+            </select>
+            <div id="caixaResumo">
+                <label>Escreva um breve resumo sobre seu Projeto</label>
+                <input id="resumoProjeto">
+            </div>
+            <div id="caixaContato">
+                <label>Informações de Contato</label>
+                <input id="contatoProjeto">
+            </div>
+            
+            <div>
+                <label>Prazo de entrega</label>
+                <input id="prazoProjeto">
+            </div>
+            <button type="button" id="enviarProjeto">ENVIAR</button>
+        </form>
+    </div>
+    
+
+    <!-- Link para a página de mostrar dados dos projetos -->
+    <a href="exibir_dados.html">Mostrar Dados dos Projetos</a>
+
+    <script src="criarProjeto.js"></script>
+    <script src="exibir_dados_local_storage.js"></script>
+</body>
+</html>
