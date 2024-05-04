@@ -23,18 +23,21 @@ body{
     justify-content: space-between;
     margin-top: 10px;
 }
-.header{
+#header{
     /* border: 2px solid black; */
     display: flex;
-    margin-left: 5%;
+    margin-left: 8%;
+    margin-top: 25px;
 }
 .navbar{
-    /* border: 2px solid black; */
+    /*border: 2px solid black;*/
     display: flex;
     flex-flow: row wrap;
     margin-right: 5%;
     justify-content: center;
     align-items: center;
+    padding-right: 50px;
+    padding-top: 20px;
     a{
         /* border: 2px solid black; */
         display: flex;
@@ -50,7 +53,7 @@ body{
     }
 }
 .container_texto_login{
-    /* border: 2px solid black; */
+    /*border: 2px solid black;*/
     display: flex;
     flex-direction: row;
     margin-top: 10px;
@@ -58,16 +61,24 @@ body{
     @media screen and (max-width: 900px) {
         flex-direction: column; 
     }
-
+.texto{
+    margin-top: 150px;
+    margin-left: 120px;
+}
     div {
         margin: 50px;
     }
+#vetor{
+    margin-right: 130px;
+}
 }
 .texto{
     
     flex-flow: row wrap;
+    display: flex;
     padding: 20px;
-    max-width: 45%;
+    max-width: 35%;
+    height: 20%;
     color: #133340;
     border: 2px solid #133340;
     border-radius: 20px;
