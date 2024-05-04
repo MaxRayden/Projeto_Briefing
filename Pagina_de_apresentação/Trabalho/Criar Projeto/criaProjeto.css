@@ -7,12 +7,13 @@
     box-sizing: border-box;
 }
 body{
-    background: url(../Assets/Imagens/background.jpg);
+    background: #C7CFD9;
     font-family: "Inter", sans-serif;
+    color: #133340;
 }
 
 .header{
-    border: 2px solid black;
+    border: 2px solid #133340;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -27,8 +28,25 @@ body{
 #titulo{
     font-size: 30px;
 }
-.cadastro{
+#campos {
     border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#campos > div {
+    flex: 1;
+    margin-right: 20px; /* Adiciona espaçamento entre as divs */
+}
+
+#campos label {
+    display: block;
+    margin-bottom: 5px; /* Adiciona espaçamento entre as labels e inputs */
+}
+
+.cadastro{
+    border: 2px solid #133340;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -38,6 +56,7 @@ body{
     width: 60%;
     height: 80vh;
     border-radius: 10px;
+    padding: auto;
 }
 .cadastro label {
     margin-bottom: 10px;
@@ -45,7 +64,8 @@ body{
     
 }
 .cadastro input {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+
 }
 #resumoProjeto{
     width: 100%;
