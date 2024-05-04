@@ -1,0 +1,117 @@
+
+@media screen {
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../Imagens/fundo-de-tela\ briefing-atualizado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container_header_navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.header{
+    /* border: 2px solid black; */
+    display: flex;
+    margin-left: 5%;
+}
+.navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    a{
+        /* border: 2px solid black; */
+        display: flex;
+        margin-left: 50px;
+        font-size: 25px;
+        text-decoration: none;
+        color: #ddd9ce;
+        padding: 5px 15px 5px 15px;
+    }
+    :hover{
+        border-top: 3px solid gray;
+        border-bottom: 3px solid gray;
+    }
+}
+.container_texto_login{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    @media screen and (max-width: 900px) {
+        flex-direction: column; 
+    }
+
+    div {
+        margin: 50px;
+    }
+}
+.texto{
+    border: 2px solid black;
+    flex-flow: row wrap;
+    padding: 20px;
+    max-width: 45%;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+.registra{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    a{
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 5px 15px 5px 15px;
+        margin-right: 5%;
+    }
+    :hover{
+        background: green;
+    }
+}
+.login{
+    border: 4px solid black;
+    background: #515151;
+    flex-flow: row wrap;
+    padding: 30px 20px 0 20px;
+    border-radius: 5%;
+}
+.email_senha input{
+    border: 2px solid black;
+    font-size: 30px;
+    margin-top: 1%;
+}
+.botao_entrar{
+    border: 2px solid black;
+    background: white;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px 104px 10px 104px;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+}    
+.botao_entrar:hover{
+    background: green;
+    }
