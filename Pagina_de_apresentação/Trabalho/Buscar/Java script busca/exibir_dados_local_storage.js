@@ -40,7 +40,7 @@ function exibirDetalhesProjetoSelecionado() {
 
         // Cria um elemento para exibir os detalhes do projeto
         const detalhesTexto = document.createElement('p');
-        detalhesTexto.textContent = `Categoria: ${dados.categoria}, Resumo: ${dados.resumo}, Prazo: ${dados.prazo}`;
+        detalhesTexto.textContent = `Categoria: ${dados.categoria}, Resumo: ${dados.resumo}, Prazo: ${dados.prazo} , Contato: ${dados.contato}`;
 
         // Adiciona o elemento de detalhes à área de detalhes do projeto
         detalhesProjeto.appendChild(detalhesTexto);

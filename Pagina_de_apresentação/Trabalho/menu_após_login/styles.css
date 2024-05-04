@@ -60,11 +60,13 @@ body{
     }
 }
 .texto{
-    border: 2px solid black;
+    
     flex-flow: row wrap;
     padding: 20px;
     max-width: 45%;
-
+    color: rgb(223, 220, 220);
+    background-color: #515151;
+    border-radius: 20px;
     h1 {
         margin-bottom: 10px;
     }
