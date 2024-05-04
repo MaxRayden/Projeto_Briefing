@@ -1,3 +1,26 @@
+// Função para exibir os dados do Local Storage
+function exibirDadosLocalStorage() {
+    // Seleciona o elemento select para adicionar as opções de projeto
+    const selecionaProjeto = document.getElementById('selecionaProjeto');
+
+    // Limpa qualquer conteúdo existente no select
+    selecionaProjeto.innerHTML = '<option value="">Selecione um projeto</option>';
+
+    // Itera sobre os itens do Local Storage
+    for (let i = 0; i < localStorage.length; i++) {
+        // Obtém o nome do arquivo (chave) e os dados (valor) do Local Storage
+        const nomeArquivo = localStorage.key(i);
+
+        // Cria uma nova opção no select com o nome do arquivo como valor
+        const option = document.createElement('option');
+        option.value = nomeArquivo;
+        option.textContent = nomeArquivo;
+
+        // Adiciona a nova opção ao select
+        selecionaProjeto.appendChild(option);
+    }
+}
+
 // Função para exibir os detalhes do projeto selecionado
 function exibirDetalhesProjetoSelecionado() {
     const selecionaProjeto = document.getElementById('selecionaProjeto');
