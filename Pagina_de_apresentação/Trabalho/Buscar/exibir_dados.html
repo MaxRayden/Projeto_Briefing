@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="buscar.css">
-    <title>Buscar Projeto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="buscar.css">
+<title>Buscar Projeto</title>
     <style>
-        /* Estilos para os projetos */
         .info-box {
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -20,7 +19,6 @@
             transform: scale(1.05);
         }
 
-        /* Estilizando o botão "Aceitar o Projeto" */
         .aceitar-btn {
             position: absolute;
             bottom: 10px;
@@ -39,7 +37,6 @@
             opacity: 0.8;
         }
 
-        /* Estilos para a janela modal */
         .modal {
             display: none;
             position: fixed;
@@ -80,7 +77,6 @@
             opacity: 0.8;
         }
 
-        /* Estilos para a mensagem temporária */
         .mensagem-temporaria {
             position: fixed;
             top: 50%;
@@ -91,9 +87,13 @@
             padding: 20px;
             border-radius: 5px;
             z-index: 1000;
-            text-align: center; /* Centraliza o texto horizontalmente */
+            text-align: center;
         }
     </style>
+
+
+
+
 </head>
 <body>
     <div class="header">
@@ -110,23 +110,22 @@
         <option value="motion">Motion Design</option>
         <option value="logotipo">Logotipo</option>
         <option value="vetorizacao">Vetorização</option>
-        <option value="filme">Filme</option>
+        <option value="filme">Filmaker</option>
     </select>
 
-    <div class="info-container" id="todosProjetos">
-        <!-- Aqui serão adicionados os projetos -->
-    </div>
+    <div class="info-container" id="todosProjetos"></div>
 
-    <!-- Janela Modal de Projetos Aceitos -->
     <div class="modal" id="projetosAceitosModal">
         <div class="modal-content">
             <span class="fechar-btn" onclick="fecharProjetosAceitosModal()">Fechar</span>
             <h2>Projetos Aceitos</h2>
             <div id="projetosAceitosContainer">
-                <!-- Aqui serão adicionados os projetos aceitos -->
             </div>
         </div>
     </div>
+
+
+
 
     <script>
         function exibirDadosLocalStorage() {
@@ -148,7 +147,6 @@
                     <p><strong>Contato:</strong> ${dados.contato}</p>
                     <button class="aceitar-btn" onclick="exibirModal(this)">Aceitar o Projeto</button>
                 `;
-
                 todosProjetosDiv.appendChild(projetoDiv);
             }
         }
@@ -173,14 +171,14 @@
 
         function exibirModal(button) {
             const projetoDiv = button.parentElement;
-            projetoDiv.style.display = 'none'; // Oculta a caixa do projeto
+            projetoDiv.style.display = 'none';
             exibirMensagemTemporaria('Projeto aceito.', 4000);
         }
 
         function exibirMensagemTemporaria(mensagem, tempo) {
             const mensagemTemporaria = document.createElement('div');
             mensagemTemporaria.textContent = mensagem;
-            mensagemTemporaria.className = 'mensagem-temporaria'; // Adiciona a classe para aplicar os estilos CSS
+            mensagemTemporaria.className = 'mensagem-temporaria';
             document.body.appendChild(mensagemTemporaria);
 
             setTimeout(() => {
@@ -191,21 +189,21 @@
         function exibirProjetosAceitosModal() {
             const modal = document.getElementById('projetosAceitosModal');
             const projetosAceitosContainer = document.getElementById('projetosAceitosContainer');
-            projetosAceitosContainer.innerHTML = ''; // Limpa os projetos aceitos
+            projetosAceitosContainer.innerHTML = '';
             const todosProjetos = document.querySelectorAll('.info-box');
             todosProjetos.forEach(projeto => {
-                if (projeto.style.display === 'none') { // Verifica se o projeto foi aceito
+                if (projeto.style.display === 'none') {
                     const projetoClone = projeto.cloneNode(true);
-                    projetoClone.querySelector('.aceitar-btn').remove(); // Remove o botão "Aceitar o Projeto"
+                    projetoClone.querySelector('.aceitar-btn').remove();
                     projetosAceitosContainer.appendChild(projetoClone);
                 }
             });
-            modal.style.display = 'block'; // Exibe o modal de projetos aceitos
+            modal.style.display = 'block';
         }
 
         function fecharProjetosAceitosModal() {
             const modal = document.getElementById('projetosAceitosModal');
-            modal.style.display = 'none'; // Fecha o modal de projetos aceitos
+            modal.style.display = 'none';
         }
 
         window.addEventListener('load', function () {
