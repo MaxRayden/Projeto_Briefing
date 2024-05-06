@@ -37,6 +37,6 @@ enviarBotao.addEventListener('click', function (){
         const nomeArquivo = 'projeto_'+ cat + idTimesTamp + '.json';
         localStorage.setItem(nomeArquivo, dadosJSON);
 
-        alert("Projeto salvo no Local Storage com sucesso!");
+        alert("Projeto salvo no Local Storage com sucesso! Projeto Enviado para os nossos Designers!");
     }
 });

@@ -1,0 +1,98 @@
+
+@media screen {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('caminho/para/poppins.woff2') format('woff2'), /* Formato WOFF2 */
+         url('caminho/para/poppins.woff') format('woff'); /* Formato WOFF */
+}
+body{
+    background-color: #C7CFD9;
+    font-family: 'Poppins', sans-serif;
+}
+.container_header_navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*margin-bottom: 20px; /* Define uma margem na parte inferior do container_header_navbar */
+    
+
+}
+#header{
+    /* border: 2px solid black; */
+    display: flex;
+    margin-left: 8%;
+    margin-top: 10px;
+}
+.navbar{
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 20px;
+    a{
+        /* border: 2px solid black; */
+        display: flex;
+        margin-left: 50px;
+        font-size: 25px;
+        text-decoration: none;
+        color: #133340;
+        padding: 5px 15px 5px 15px;
+    }
+    :hover{
+        border-top: 3px solid #133340;
+        border-bottom: 3px solid #133340;
+    }
+}
+.container_texto_login{
+    /*border: 2px solid black;*/
+    background-color: #133340;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 5px;
+    
+}
+
+.texto{
+    margin-top: 60px;
+    margin-left: 120px;
+}
+    div {
+        margin: 50px;
+    }
+#vetor{
+    /*border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 10%;
+    
+}
+.texto{
+    
+    flex-flow: row wrap;
+    display: flex;
+    padding: 20px;
+    max-width: 35%;
+    height: 20%;
+    color: #C7CFD9;
+    border: 2px solid #133340;
+    border-radius: 20px;
+    
+    h1 {
+        margin-bottom: 10px;
+    }
+}

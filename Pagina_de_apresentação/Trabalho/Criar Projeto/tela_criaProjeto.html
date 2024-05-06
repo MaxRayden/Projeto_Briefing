@@ -9,13 +9,17 @@
 
 <body>
     <div class="header">
-    <h2 id="titulo">CRIAÇÃO DE PROJETOS</h2>
+        <h1>Criação de Projeto</h1>
+        <div>
+            <a href="../menu_após_login/index.html">Página Inicial</a>
+        </div>
     </div>
 
     <div class="cadastro">
         <form id="formProjeto">
             <div id="campos">
-                <label>Selecione uma Categoria de Projeto</label>
+                <div>
+                <label>Categoria</label>
                 <select id="opcoes">
                     <option value=""></option>
                     <option value="web">Web Desing</option>
@@ -24,20 +28,21 @@
                     <option value="vetorizacao">Vetorização</option>
                     <option value="logotipo">Logotipo</option>
                 </select>
+                </div>
                 <div>
-                    <label>Prazo de entrega (DIAS)</label>
-                    <input id="prazoProjeto">
+                    <label>Prazo de entrega (dias)</label>
+                    <input id="prazoProjeto" placeholder="0">
                 </div>
                 <div>
                     <label>E-mail para Contato</label>
-                    <input id="contato"> 
+                    <input id="contato" placeholder="seu.email@gmail.com"> 
                 </div>
             </div>
 
 
             <div id = caixaResumo>
                 <label>Escreva um breve resumo sobre seu Projeto</label>
-                <textarea id="resumoProjeto"></textarea>
+                <textarea id="resumoProjeto" placeholder="Aqui você pode especificar dados sobre o projeto que deseja criar por exemplo: 'Um site para minha loja de roupas para os clientes poderem acessar os catálogos e preços, com chat para se comunicar com os clientes."></textarea>
             </div>
 
             <button type="button" id="enviarProjeto">ENVIAR</button>

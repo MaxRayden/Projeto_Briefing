@@ -1,6 +1,3 @@
-@media screen {
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -13,53 +10,99 @@ body{
 }
 
 .header{
-    border: 2px solid #133340;
+    /*border: 2px solid #133340;*/
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    margin: 20px auto;
-    width: 60%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 0.5%;
+    padding: 50px;
+    background-color: #133340;
+    color: #fff;
 }
+.header h1 {
+    margin: 0;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+.header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 #titulo{
     font-size: 30px;
 }
 #campos {
-    border: 2px solid black;
     display: flex;
-    flex-wrap: wrap;
-
 }
 
 #campos > div {
-    flex: 1;
-    margin-right: 20px; /* Adiciona espaçamento entre as divs */
+    /*border: 2px solid blue;*/
+    padding: 0%;
+    display: flex;
+    flex-direction: column; /* Altera a direção do fluxo para coluna */
+    align-items: center;
+    padding: 10px;
 }
 
 #campos label {
-    display: block;
-    margin-bottom: 5px; /* Adiciona espaçamento entre as labels e inputs */
+    /*border: 2px solid blue;*/
+    margin-bottom: 5px;
+    background: #133340;
+    border-radius: 5px;
+    width: 105%;
+    text-align: center;
+    color: #C7CFD9;
+    word-wrap: break-word;
+    padding: 0.5%;
+
 }
 
+#opcoes,
+#prazoProjeto,
+#contato {
+    /*border: 2px solid yellow;*/
+    background-color: #C7CFD9;
+    border-radius: 5px;
+
+}
+#opcoes:hover,
+#prazoProjeto:hover,
+#contato:hover {
+    background-color: #133340;
+    color: #C7CFD9; 
+}
+
+#prazoProjeto{
+    width: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Adiciona espaço entre label e input */
+#campos input,
+#campos select {
+    margin-top: 5px;
+}
 .cadastro{
-    border: 2px solid #133340;
+    /*border: 2px solid red;*/
+    background-color: #ffffffa5;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: 20px auto auto;
     width: 60%;
-    height: 80vh;
+    height: 60vh;
     border-radius: 10px;
-    padding: auto;
 }
 .cadastro label {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: block;
     
 }
@@ -68,17 +111,51 @@ body{
 
 }
 #resumoProjeto{
+    /*border: 2px solid green;*/
     width: 100%;
     height: 200px;
     resize: none;
     text-align: left;
     overflow-wrap: break-word;
-    padding: 0; 
+    padding: 0;
+    background-color: #C7CFD9;
+    border-radius: 10px;
     
 }
+
+#caixaResumo label{
+    margin-bottom: 5px;
+    background:#133340;
+    border-radius: 5px;
+    text-align: center;
+    color: #C7CFD9;
+    word-wrap: break-word;
+    padding: 0.5%;
+}
+
+
 .cadastro select {
     width: 100%; 
     max-width: 200px; 
     margin: 0 auto; 
     text-align: center;
+}
+
+#enviarProjeto {
+    background-color: #133340; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: #C7CFD9; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Exibe como bloco em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#enviarProjeto:hover {
+    background-color: #C7CFD9;
+    color: #133340; /* Mudança de cor ao passar o mouse */
 }

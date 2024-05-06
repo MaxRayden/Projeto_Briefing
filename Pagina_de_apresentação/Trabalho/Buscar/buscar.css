@@ -8,7 +8,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #007bff;
+    background-color: #133340;
     color: #fff;
 }
 .header h1 {
@@ -99,18 +99,18 @@ body {
 #selecionaCategoria {
     margin: 20px 0 0 45px;
     padding: 10px;
-    border: 2px solid #007bff;
+    border: 2px solid #133340;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    color: #007bff;
-    background-color: #fff;
+    color: #C7CFD9;
+    background-color: #133340;
     cursor: pointer;
     transition: all 0.3s;
 }
 #selecionaCategoria:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #C7CFD9;
+    color: #133340;
 }
 .info-box {
     border: 1px solid #ccc;
