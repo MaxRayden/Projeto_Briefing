@@ -29,7 +29,7 @@ body{
     /* border: 2px solid black; */
     display: flex;
     margin-left: 8%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .navbar{
     /*border: 2px solid black;*/
@@ -96,3 +96,33 @@ body{
         margin-bottom: 10px;
     }
 }
+.container_caixas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.caixa {
+    width: 1000px;
+    height: 180px;
+    border-radius: 2%;
+    background-color: #133340;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mudança aqui para alinhar o conteúdo no topo */
+    align-items: center;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total da caixa */
+}
+
+.caixa h2 {
+    margin-bottom: 10px; /* Adicionando um espaço entre o título e o restante do conteúdo */
+}
+
+.caixa:hover {
+    transform: scale(1.1);
+}
+
